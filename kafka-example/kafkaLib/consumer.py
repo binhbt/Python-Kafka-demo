@@ -4,7 +4,7 @@ from kafka import KafkaConsumer
 class Consumer():
     def __init__(self):
         consumer = KafkaConsumer('messages',
-                                 bootstrap_servers=['192.168.1.25:9092'],
+                                 bootstrap_servers=['134.209.108.208:9092'],
                                  auto_offset_reset='latest',
                                  enable_auto_commit=True,
                                  auto_commit_interval_ms=500,
